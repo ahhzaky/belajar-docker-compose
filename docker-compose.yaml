@@ -21,7 +21,7 @@ services:
             - DB_PORT=5432
             - DB_DATABASE=belajar
         depends_on:
-            - todo-postgres
+            - "todo-postgres"
     todo-frontend:
         build: ./frontend
         ports:
